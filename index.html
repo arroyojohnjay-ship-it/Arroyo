@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: goldenrod;
+      font-family: Arial, 'Times New Roman', serif;
+      color: black;
+      border: 10px ridge black;
+      margin: 0;
+      padding: 10px;
+    }
+
+    header, h1, h2, h4 {
+      text-align: center;
+    }
+
+    section {
+      display: none;
+      animation: fadeIn 0.5s ease;
+    }
+
+    #home {
+      display: block; /* Only Home shows by default */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /* Top navigation buttons before profile */
+    .top-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-buttons button {
+      background-color: darkred;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .top-buttons button:hover {
+      background-color: crimson;
+      transform: scale(1.1);
+    }
+
+    /* Scroll-up button */
+    #scrollBtn {
+      position: fixed;
+      bottom: 80px;
+      right: 40px;
+      background-color: darkred;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    #scrollBtn:hover {
+      background-color: crimson;
+      transform: scale(1.1);
+    }
+
+    /* Footer nav (optional) */
+    nav {
+      background-color: black;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav button {
+      background-color: darkred;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: crimson;
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 🧭 Buttons Before Profile -->
+  <div class="top-buttons">
+    <button onclick="showSection('home')">🏠 Home</button>
+    <button onclick="showSection('experience')">💼 Experience</button>
+    <button onclick="showSection('outputs')">📁 Outputs</button>
+    <button onclick="showSection('contacts')">📞 Contacts</button>
+  </div>
+
+  <!-- 🧑‍💻 PROFILE / HOME SECTION -->
+  <section id="home">
+    <header>
+      <h1>MY PERSONAL PORTFOLIO</h1>
+    </header>
+    <div class="center">
+      <img src="/j/Profile.jpg" alt="Me" width="100" style="border-radius:50%;">
+      <p>Welcome to my personal portfolio website! I’m <b>Johnjay C. Arroyo</b>, a Bachelor of Science in Information Technology student at Central Philippine State University Moises Padilla Campus with a passion for running, workouts, and editing.</p>
+    </div>
+
+    <h2 class="center">Figma Tutorial Videos</h2>
+    <div class="center">
+      <p><a href="https://www.youtube.com/watch?v=jubD8qa2qzY" target="_blank">🎥 Figma Tutorial for Beginners</a></p>
+      <p><a href="https://www.youtube.com/watch?v=FTFaQWZBqQ8" target="_blank">🎥 UI/UX Design with Figma</a></p>
+      <p><a href="https://www.youtube.com/watch?v=hrHL2VLMl7g" target="_blank">🎥 Figma Complete Guide</a></p>
+    </div>
+  </section>
+
+  <!-- 💼 EXPERIENCE SECTION -->
+  <section id="experience">
+    <h2 class="center">My Experience</h2>
+     <div class="center">
+      <p>This is my Editing Tools</p>
+      <img src="/image-5.jpeg" width="80">
+      <img src="/image-6.png" width="80">
+      <img src="/image-7.png" width="90">
+      <img src="/image-10.jpg" width="80">
+    <p class="center" style="max-width: 800px; margin: 0 auto;">
+      My experience using <b>Canva</b>, <b>Figma</b>, <b>Adobe Premiere</b>, and <b>Photoshop</b> has helped me develop strong design and creative skills.  
+      Each tool has taught me valuable lessons — Canva in layout and accessibility, Figma in UX design and collaboration, Premiere in visual storytelling, and Photoshop in limitless creativity.  
+      Together, these tools have shaped my growth as a digital creator and designer.
+    </p>
+  </section>
+
+  <!-- 📁 OUTPUTS SECTION -->
+  <section id="outputs">
+    <h2 class="center">My Outputs</h2>
+    <ol>
+      <li><a href="https://www.canva.com/design/DAGxH_WFog0/VnItq552-ukXItjuX-fqEQ/edit" target="_blank">Canva Portfolio</a></li>
+      <li><a href="https://www.figma.com/design/mhrkeps52gPnvCd0gBN2CL/Arroyo_Figma_Portfolio" target="_blank">Figma Portfolio</a></li>
+      <li><a href="https://www.figma.com/design/QA3ZJJy37BVjh8DcQ1xObM/Arroyo_e-commerce" target="_blank">Figma E-commerce Website</a></li>
+    </ol>
+      <br>
+       <div class="center">
+      <p>This is my Photoshop Edits</p>
+      <img src="/j/Mylayout.jpg" width="100">
+      <img src="/j/chessboard.jpg" width="115">
+      <img src="/j/product.jpg" width="100">
+    </div>
+  </section>
+
+  <!-- 📞 CONTACTS SECTION -->
+  <section id="contacts">
+    <h2 class="center">Contact Information</h2>
+    <p class="center">
+      <b>Facebook:</b> <a href="https://www.facebook.com/johnjay.c.arroyo" target="_blank">Johnjay C. Arroyo</a><br>
+      <b>Email:</b> <a href="mailto:arroyojohnjay@gmail.com">arroyojohnjay@gmail.com</a><br>
+      <b>Phone:</b> 09939817955<br>
+      <b>TikTok:</b> 20jjay06
+    </p>
+
+    <div class="center">
+      <h5>Leave your message here</h5>
+      <form>
+        <textarea placeholder="Write your message here..." rows="2" cols="40"></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🚀 Rocket Scroll-Up Button -->
+  <button id="scrollBtn" title="Go to top">🚀</button>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(section => {
+        section.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    document.getElementById("scrollBtn").addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
